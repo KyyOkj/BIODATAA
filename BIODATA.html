@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biodata Sederhana</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .biodata-item {
+      margin: 15px 0;
+    }
+
+    .label {
+      font-weight: bold;
+    }
+
+    .theme-btn {
+      display: bold;
+      margin: 24px auto;
+      padding: 10px 15px;
+      background-color: #222;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .theme-btn:hover {
+      background-color: #222;
+    }
+  
+    .nav-link {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .humberger-bar {
+      color: white;
+    }
+    
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    
+    @media (max-width: 800px) {
+      .nav-link {
+        display: none;
+      }
+    }
+    
+    @media (min-width:780px) {
+      .humberger-bar {
+        display: none;
+      }
+    }
+      
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">CEK</div>
+    
+    <div class="nav-link">
+      <a href="https://www.instagram.com/ayskafdllh__?igsh=MW5wcDBveDVrNTg0YQ==" target="_blank">instagram</a>
+      <a href="https://discord.gg/pwXYaZmM" target="_blank">discord</a>
+      <a href="https://github.com/KyyOkj" target="_blank">Github</a>
+    </div>
+    
+    <div class="humberger-bar">
+      <i class="fa fa-bars"></i>
+    </div>
+      
+      <div class="container">
+    <h1>Biodata Saya</h1>
+    <div class="biodata-item"><span class="label">Nama:</span> Azka Fadillah</div>
+    <div class="biodata-item"><span class="label">Kelas:</span> X RPL 1</div>
+    <div class="biodata-item"><span class="label">Umur:</span> 15 tahun</div>
+    <div class="biodata-item"><span class="label">Email:</span> azkafadillah1107@email.com</div>
+    <div class="biodata-item"><span class="label">Alamat:</span> jakarta, Indonesia</div>
+    <button class="theme-btn" onclick="gantiTema()">Ganti Tema</button>
+  </div>
+  </nav>
+
+
+  <script>
+    let isDark = false;
+
+    function gantiTema() {
+      document.body.style.backgroundColor = isDark ? "#f4f4f4" : "#222";
+      document.querySelector('.container').style.backgroundColor = isDark ? "white" : "#333";
+      document.querySelector('.container').style.color = isDark ? "black" : "white";
+      isDark = !isDark;
+    }
+  </script>
+</body>
+</html>
